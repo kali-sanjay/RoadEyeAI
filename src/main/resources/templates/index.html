@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoadEye AI | Smarter Roads</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #07110d;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            border-bottom: 1px solid #20352a;
+        }
+
+        .logo {
+            color: #70ff9a;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 24px;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            padding: 70px 8%;
+            background:
+                radial-gradient(ellipse at 85% 40%,
+                #174a30 0%, #07110d 60%);
+        }
+
+        .content {
+            max-width: 700px;
+        }
+
+        .tag {
+            color: #70ff9a;
+            border: 1px solid #397c50;
+            padding: 9px 14px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 1.08;
+            margin-bottom: 24px;
+        }
+
+        h1 span {
+            color: #70ff9a;
+        }
+
+        p {
+            color: #b7c7bd;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #70ff9a;
+            color: #07110d;
+            padding: 15px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 35px 8% 65px;
+        }
+
+        .feature {
+            background: #101e17;
+            border: 1px solid #263d2e;
+            padding: 25px;
+            border-radius: 14px;
+        }
+
+        .feature h3 {
+            color: #70ff9a;
+            margin-bottom: 12px;
+        }
+
+        .feature p {
+            font-size: 15px;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #8da497;
+            border-top: 1px solid #20352a;
+        }
+
+        @media (max-width: 650px) {
+            nav {
+                padding: 20px 5%;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            nav a {
+                margin-left: 10px;
+            }
+
+            .hero {
+                padding: 65px 6%;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+                padding: 25px 6% 45px;
+            }
+			.report-link {
+			    display: inline-block;
+			    margin-top: 16px;
+			    color: #70ff9a;
+			    text-decoration: none;
+			    font-weight: bold;
+			}
+
+			.report-link:hover {
+			    text-decoration: underline;
+			}
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">🛣️ RoadEye AI</div>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="#features">Features</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="content">
+            <div class="tag">● AI-POWERED ROAD SAFETY</div>
+
+            <h1>Smarter Roads.<br>
+                <span>Safer Journeys.</span>
+            </h1>
+
+            <p>
+                Report road hazards, identify potential risks,
+                and help communities build safer roads with
+                AI-powered road monitoring.
+            </p>
+
+            <a class="btn" href="/report">Explore RoadEye AI →</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+
+        <div class="feature">
+            <h3>📸 Hazard Reporting</h3>
+            <p>Prepare to report potholes, damaged roads,
+                and other road hazards.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🤖 AI Analysis</h3>
+            <p>AI integration will help classify road hazards
+                and suggest their priority.</p>
+        </div>
+
+        <div class="feature">
+            <h3>📍 Location Tracking</h3>
+            <p>Plan to associate hazard reports with their
+                reported road locations.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 RoadEye AI | Building Safer Roads
+    </footer>
+
+</body>
+</html>
